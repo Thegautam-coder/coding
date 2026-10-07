@@ -1,0 +1,10 @@
+body{
+    background-color: coral;
+    color: rebeccapurple;
+}
+
+div >h2{
+    text-transform: capitalize;
+    text-decoration-style: solid;
+    text-decoration: underline;
+}
