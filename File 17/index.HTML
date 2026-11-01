@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS - </title>
+    <title>selector - CSS</title>
+    <style>
+        /* universal selector */
+        *{
+            color: lightblue;
+        }
+        /* class selector */
+        .container{
+            background-color: Red;
+        }
+        /* Id selector */
+        #red{
+            background-color: navy;
+        }
+        /* element selectors */
+        /* div{
+            color: rebeccapurple;
+        } */
+         /* child selectors */
+         div >p{
+            background-color: blueviolet;
+         }
+         /* decedent selectors */
+         div p{
+            background-color: rgb(92, 65, 247);
+         }
+         /* pseudo selector */
+         a:visited{
+            color: green;
+         }
+         a:active{
+            background-color: red;
+         }
+         a:link{
+            color: aquamarine;
+         }
+         a:hover{
+            background-color: brown;
+         }
+         main>p:first-child{
+            color: chocolate;
+         }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        I am a container
+    </div>
+    <div id="red">
+        I am a container
+    </div>
+    <div >
+        I am a container
+    </div>
+    <div>
+        <p>
+            Lorem, ipsum.
+        </p>
+    </div>
+    <a href="https://www.Google.com">Open google</a>
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facere, natus porro praesentium neque, illo suscipit amet aut enim perferendis, dolores dignissimos temporibus dolorem laboriosam expedita dicta. Repudiandae excepturi minima sunt libero, exercitationem aliquid in possimus pariatur totam obcaecati, numquam illum ipsa quibusdam nisi nulla animi beatae neque nemo reiciendis officiis. Recusandae neque voluptatum rerum ab eligendi eum dolorum eius dolore, odio iste aut.</p>
+        </article>
+    </div>
+    <main>
+        <p>I am first</p>
+        <p>I am second</p>
+        <p>I am third</p>
+        <p>I am fourth</p>
+    </main>
 </body>
 </html>
